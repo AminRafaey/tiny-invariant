@@ -10,5 +10,5 @@ export default function invariant(condition: mixed, message?: string) {
   }
   // Condition not passed
 
-  throw new Error(`${prefix}: ${message || ''}`);
+  throw new Error(`${prefix}- ${message || ''}`);
 }
