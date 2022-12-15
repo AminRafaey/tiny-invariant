@@ -1,10 +1,10 @@
 // @flow
-const prefix: string = 'Invariant failed';
+const prefix = 'Invariant failed';
 
 // Throw an error if the condition fails
 // Strip out error messages for production
 // > Not providing an inline default argument for message as the result is smaller
-export default function invariant(condition: mixed, message?: string) {
+export default function invariant(condition, message) {
   if (condition) {
     return;
   }
